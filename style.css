@@ -1096,4 +1096,19 @@ body.dark-mode .toast {
     padding: 6px 12px;
   }
 }
+/* Police par défaut pour tout le site */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Titres plus stylés */
+h1, h2, h3, .product-title, .section-title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 
