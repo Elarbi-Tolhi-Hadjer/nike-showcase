@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Découvrez la Nike Air Jordan 1 OG Satin Bred – Limited Edition. Style iconique, confort premium et design élégant pour tous les passionnés de sneakers.">
+
+  <!-- Meta Keywords -->
+  <meta name="keywords" content="Nike, Air Jordan 1, OG Satin Bred, Limited Edition, sneakers, chaussures, style iconique, confort premium">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Nike Air Jordan 1 - OG Satin Bred | Premium Edition">
+  <meta property="og:description" content="Découvrez la Nike Air Jordan 1 OG Satin Bred – Limited Edition. Style iconique, confort premium et design élégant pour tous les passionnés de sneakers.">
+  <meta property="og:image" content="img/Nike-Air-Jordan-OG-Satin-Bred.png">
+  <meta property="og:type" content="website">
+
+  <!-- Meta en anglais -->
+  <meta name="description" content="Discover the Nike Air Jordan 1 OG Satin Bred – Limited Edition. Iconic style, premium comfort, and elegant design for all sneaker enthusiasts.">
+  <meta name="keywords" content="Nike, Air Jordan 1, OG Satin Bred, Limited Edition, sneakers, shoes, iconic style, premium comfort">
+<title>Nike Air Jordan 1  Bred – Limited Edition Sneakers | Shop Now</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-follower"></div>
+
+  <!-- Notification Toast -->
+  <div class="toast" id="toast">
+    <i class="fas fa-check-circle"></i>
+    <span id="toast-message">Product added to cart!</span>
+  </div>
+
+  <!-- Header -->
+  <header>
+<a href="#" class="logo" style="display:flex; align-items:center; gap:10px;">
+  <!-- Logo Swoosh -->
+  <img src="img/logo.png" alt="Nike Logo" width="60" />
+
+  <!-- Texte Nike -->
+  <span style="font-size:24px; font-weight:bold; color:#000;">NIKE</span>
+</a>
+
+    <nav>
+      <ul>
+        <li><a href="#">MEN</a></li>
+        <li><a href="#">WOMEN</a></li>
+        <li><a href="#">BOYS</a></li>
+        <li><a href="#">GIRLS</a></li>
+        <li><a href="#">COLLECTIONS</a></li>
+      </ul>
+    </nav>
+   
+    <div class="header-icons">
+      <i class="fas fa-shopping-bag"><span class="cart-badge">2</span></i>
+      <i class="fas fa-search"></i>
+      <i class="fas fa-bars"></i>
+      <i id="darkModeToggle" class="dark-toggle">🌙</i>
+    </div>
+  </header>
+
+  <!-- Product Container -->
+  <div class="container">
+
+    <!-- Product Info -->
+    <div class="product-info" id="productInfo">
+      <h1 class="product-title">NIKE AIR JORDAN 1</h1>
+      <h2 class="product-subtitle" id="productSubtitle">OG SATIN BRED</h2>
+      <p class="description">
+        Rediscover elegance and power with the Air Jordan 1 High OG Satin Bred 2024. 
+        A modern reinterpretation of a timeless legend, this edition combines luxurious satin 
+        with the iconic "Bred" colorway — a symbol of victory, dominance, and street culture heritage.
+      </p>
+      
+      <ul class="features">
+        <li>Premium satin construction with leather accents</li>
+        <li>Iconic "Bred" colorway: Varsity Red, Black, and White</li>
+        <li>High-top design for optimal ankle support</li>
+        <li>Encapsulated Air-Sole unit for maximum cushioning</li>
+        <li>Solid rubber outsole with herringbone pattern for superior traction</li>
+      </ul>
+      
+      <div class="price-container">
+        <div class="price">25,000 DA</div>
+        <div class="sale-badge" id="saleBadge">LIMITED EDITION</div>
+      </div>
+      
+      <div class="size-selector">
+        <span class="size-title">Select Size (EU)</span>
+        <div class="sizes">
+          <div class="size-option">EU 38</div>
+          <div class="size-option">EU 39</div>
+          <div class="size-option selected">EU 40</div>
+          <div class="size-option">EU 41</div>
+          <div class="size-option">EU 42</div>
+          <div class="size-option">EU 43</div>
+        </div>
+      </div>
+      
+      <button class="add-to-cart" id="addToCart">ADD TO CART</button>
+      
+      <div class="wishlist-btn" id="wishlistBtn">
+        <i class="far fa-heart"></i> Add to Wishlist
+      </div>
+    </div>
+
+    <!-- Main Image & Side Thumbnails -->
+    <section>
+      <div class="main-image" id="mainImageContainer">
+        <img src="img/Nike Air Jordan sb.png" 
+             alt="Nike Air Jordan 1 OG Satin Bred" 
+             id="mainImage" 
+             data-bg="img/bg1.png" />
+
+        <!-- Side View Thumbnails -->
+        <div class="side-thumbnails">
+          <div class="side-thumbnail active" data-img="img/Group 132.png">
+            <img src="img/Group 132.png" alt="Top View" />
+          </div>
+          <div class="side-thumbnail" data-img="img/Group 133.png">
+            <img src="img/Group 133.png" alt="Side View" />
+          </div>
+          <div class="side-thumbnail" data-img="img/Group 134.png">
+            <img src="img/Group 134.png" alt="Back View" />
+          </div>
+          <div class="side-thumbnail" data-img="img/Group 135.png">
+            <img src="img/Group 135.png" alt="Sole View" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Thumbnail Navigation -->
+      <nav>
+        <div class="thumbnails">
+          <div class="thumbnail active"
+               data-src="img/Nike Air Jordan sb.png"
+               data-color="red"
+               data-title="OG SATIN BRED"
+               data-description="Premium satin construction with leather accents"
+               data-badge="LIMITED EDITION"
+               data-sides='["img/Group 132.png","img/Group 133.png","img/Group 134.png","img/Group 135.png"]'
+               data-bg="img/bg1.png">
+            <img src="img/Nike Air Jordan sb.png" alt="Bred Colorway">
+          </div>
+
+          <div class="thumbnail"
+               data-src="img/Nike Air Jordan 1 Mid Taxi.png"
+               data-color="yellow"
+               data-title="MID TAXI"
+               data-description="Classic yellow and black colorway"
+               data-badge="CLASSIC STYLE"
+               data-sides='["img/group 128.png","img/group 129.png","img/group 130.png","img/group 131.png"]'
+               data-bg="img/bg3.png">
+            <img src="img/Nike Air Jordan 1 Mid Taxi.png" alt="Taxi Colorway">
+          </div>
+
+          <div class="thumbnail"
+               data-src="img/pngwing.com (16).png"
+               data-color="blue"
+               data-title="ELECTRO Blue"
+               data-description="Vibrant Blue and black combination"
+               data-badge="VIBRANT EDITION"
+               data-sides='["img/group 140.png","img/group 144.png","img/group 137.png","img/group 136.png"]'
+               data-bg="img/bg2.png">
+            <img src="img/pngwing.com (16).png" alt="Electro Blue">
+          </div>
+        </div>
+
+        <!-- Arrow Navigation -->
+        <div class="navigation-buttons">
+          <button class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+          <button class="nav-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Product Details Accordion -->
+    <div class="details-accordion">
+      <div class="accordion-item active">
+        <div class="accordion-header">
+          Product Details <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-content-inner">
+            <p>The Air Jordan 1 High OG Satin Bred combines the iconic silhouette with premium materials for a luxurious take on a classic. Featuring a satin upper with traditional leather overlays, this shoe pays homage to MJ's legendary Rookie of the Year season while offering modern comfort and style.</p>
+            <p><strong>Colorway:</strong> Black/Varsity Red-White</p>
+            <p><strong>Style Code:</strong> 555088-063</p>
+            <p><strong>Release Date:</strong> October 28, 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          Size & Fit <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-content-inner">
+            <p>Runs true to size. We recommend ordering your regular size.</p>
+            <p>The Air Jordan 1 features a classic high-top design that provides excellent ankle support. The padded collar and tongue offer comfort, while the traditional lacing system ensures a secure fit.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          Shipping & Returns <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-content-inner">
+            <p><strong>Free shipping</strong> on orders over 5000 DA. Delivery within 3-5 business days.</p>
+            <p><strong>Free returns</strong> within 30 days of purchase. Items must be unworn and in original packaging.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Products -->
+    <div class="related-products">
+      <h2 class="section-title">You Might Also Like</h2>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-card-image">
+            <img src="img/pngegg (1).png" alt="Air Jordan 1 Mid Taxi">
+          </div>
+          <div class="product-card-info">
+            <h3 class="product-card-title">Air Jordan 1 Mid "Taxi"</h3>
+            <div class="product-card-price">25,000 DA</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card-image">
+            <img src="img/pngegg (2).png" alt="Air Jordan 1 High Electro Blue">
+          </div>
+          <div class="product-card-info">
+            <h3 class="product-card-title">Air Jordan 1 High "Electro Blue"</h3>
+            <div class="product-card-price">25,000 DA</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card-image">
+            <img src="img/pngegg.png" alt="Air Jordan 1 SB NYC to Paris">
+          </div>
+          <div class="product-card-info">
+            <h3 class="product-card-title">Air Jordan 1 SB "NYC to Paris"</h3>
+            <div class="product-card-price">25,000 DA</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card-image">
+            <img src="img/klipartz.com.png" alt="Air Jordan 1 Shadow">
+          </div>
+          <div class="product-card-info">
+            <h3 class="product-card-title">Air Jordan 1 Retro High "Shadow"</h3>
+            <div class="product-card-price">25,000 DA</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Products</h3>
+        <ul class="footer-links">
+          <li><a href="#">Shoes</a></li>
+          <li><a href="#">Clothing</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">New Releases</a></li>
+          <li><a href="#">Sale</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Support</h3>
+        <ul class="footer-links">
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Shipping & Returns</a></li>
+          <li><a href="#">Order Status</a></li>
+          <li><a href="#">Size Guide</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>About Nike</h3>
+        <ul class="footer-links">
+          <li><a href="#">News</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Investors</a></li>
+          <li><a href="#">Sustainability</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Connect with Us</h3>
+        <p>Sign up for exclusive offers, original stories, events and more.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+     
+      <div class="copyright">
+  © 2025 Hadjer ElArabi tolhi. Tous droits réservés |  Personnel | Nike,  Product Page | Free Shipping Worldwide
+</div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
