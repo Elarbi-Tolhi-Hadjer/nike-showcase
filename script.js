@@ -256,23 +256,35 @@ if (sidesData) {
       toggle.textContent = "🌙 Dark Mode";
     }
   });
-const mainImage = document.getElementById("mainImage");
-const mainContainer = document.getElementById("mainImageContainer");
-const thumbnails = document.querySelectorAll(".thumbnail");
+  
 
-thumbnails.forEach(thumbnail => {
-  thumbnail.addEventListener("click", () => {
-    const newSrc = thumbnail.getAttribute("data-src");
-    const newBg = thumbnail.getAttribute("data-bg");
 
-    // Change main image
-    mainImage.src = newSrc;
 
-    // Change background
-    mainContainer.style.background = `url("${newBg}") no-repeat center/cover`;
 
-    // Update active state
-    thumbnails.forEach(t => t.classList.remove("active"));
-    thumbnail.classList.add("active");
-  });
+const toast = document.getElementById('toast');
+const addToCartBtn = document.getElementById('addToCart');
+
+addToCartBtn.addEventListener('click', () => {
+  toast.classList.add('show');
+  setTimeout(() => {
+    toast.classList.remove('show');
+  }, 2500);
+});
+// Sidebar Toggle
+const sidebar = document.getElementById("sidebar");
+const menuBtn = document.querySelector(".fa-bars");
+const closeBtn = document.getElementById("closeSidebar");
+
+menuBtn.addEventListener("click", () => {
+  sidebar.classList.add("active");
+});
+closeBtn.addEventListener("click", () => {
+  sidebar.classList.remove("active");
+});
+
+// Optional: Close sidebar when clicking outside
+document.addEventListener("click", (e) => {
+  if (!sidebar.contains(e.target) && !menuBtn.contains(e.target)) {
+    sidebar.classList.remove("active");
+  }
 });
