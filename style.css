@@ -1111,4 +1111,107 @@ h1, h2, h3, .product-title, .section-title {
   text-transform: uppercase;
 }
 
+/* ---------------- Header ---------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+header .logo img {
+  width: 40px;
+}
+header .logo span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Navigation Desktop */
+header nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  transition: color 0.3s ease;
+}
+header nav ul li a:hover {
+  color: #e63946;
+}
+
+/* Icons */
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.header-icons .fa-bars {
+  display: none; /* Hide hamburger on desktop */
+}
+
+/* ---------------- Sidebar Mobile ---------------- */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background: #111;
+  color: #fff;
+  padding: 40px 20px;
+  transition: right 0.3s ease;
+  z-index: 2000;
+}
+.sidebar.active {
+  right: 0;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar ul li {
+  margin: 20px 0;
+}
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+.sidebar ul li a:hover {
+  color: #e63946;
+}
+.sidebar .close-btn {
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 768px) {
+  header nav {
+    display: none; /* Hide normal nav */
+  }
+  .header-icons .fa-bars {
+    display: block; /* Show hamburger */
+  }
+}
+
 
