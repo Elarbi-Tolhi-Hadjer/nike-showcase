@@ -32,4 +32,4 @@
 ---
 
 ## 🔗 Live Demo
-👉 [View Project]([https://your-username.github.io/nike-air-jordan1-interactive/](https://elarbi-tolhi-hadjer.github.io/nike-showcase/))
+👉 [View Project](https://elarbi-tolhi-hadjer.github.io/nike-showcase/)
