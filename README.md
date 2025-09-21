@@ -1,6 +1,6 @@
 # Nike Air Jordan 1 Interactive Experience
 
-> ✨ Full interactive product experience built with HTML, CSS & Vanilla JS.
+✨ Full interactive product experience built with **HTML, CSS & Vanilla JS**.
 
 ---
 
@@ -12,12 +12,24 @@
 - 📱 Fully Responsive
 
 ---
-
-## 💻 التقنيات المستخدمة
-- HTML5
-- CSS3
-- JavaScript
-- Font Awesome
+## 💻 Technologi used
+- HTML5  
+- CSS3  
+- JavaScript  
+- Font Awesome  
 
 ---
 
+## 📸 Preview
+![1](img/1.png)
+![2](img/2.png)
+![3](img/3.png)
+![4](img/4.png)
+![5](img/5.png)
+![6](img/6.png)
+![7](img/7.png)
+
+---
+
+## 🔗 Live Demo
+👉 [View Project]([https://your-username.github.io/nike-air-jordan1-interactive/](https://elarbi-tolhi-hadjer.github.io/nike-showcase/))
